@@ -49,6 +49,12 @@ resource "aws_eks_node_group" "default" {
 
     }
 
+    remote_access {
+
+        ec2_ssh_key = var.keypair_name
+
+    }
+
     lifecycle {
 
         ignore_changes = [ scaling_config[ 0 ].desired_size ]

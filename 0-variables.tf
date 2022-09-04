@@ -63,3 +63,11 @@ variable "cluster_enabled_log_types" {
     default     = [ "api", "audit", "authenticator", "controllerManager", "scheduler" ]
 
 }
+
+variable "keypair_name" {
+
+    type        = string
+    default     = null
+    description = "ssh key pair name"
+
+}
