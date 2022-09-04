@@ -1,5 +1,5 @@
-output "vpc" {
+output "cluster" {
 
-    value = module.vpc
+    value = aws_eks_cluster.cluster
 
 }
